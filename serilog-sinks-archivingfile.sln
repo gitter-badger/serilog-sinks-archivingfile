@@ -7,7 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{56D6AA84-AD3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6CD6F73F-F9A4-4D80-961E-DFFFBC2328ED}"
 	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		Build.ps1 = Build.ps1
 		global.json = global.json
+		README.md = README.md
+		assets\Serilog.snk = assets\Serilog.snk
+		assets\Serilog.svg = assets\Serilog.svg
 	EndProjectSection
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Serilog.Sinks.ArchivingFile", "src\Serilog.Sinks.ArchivingFile\Serilog.Sinks.ArchivingFile.xproj", "{3A0ACF50-4D72-4F41-A6D4-1F2F24A4BC04}"

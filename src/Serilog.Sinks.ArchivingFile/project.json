@@ -1,13 +1,35 @@
-﻿{
-  "version": "1.0.0-*",
+{
+    "version": "1.0.0-*",
+    "description": "Writes Serilog events to a text file, one daily with option to arhieve and compress to seperate location. This sink was based on Serilog.Sinks.RollingFile",
+    "authors": [ "Danny W McKinney" ],
+    "packOptions": {
+        "tags": [ "serilog", "file", "io", "archiving", "rolling" ],
+        "projectUrl": "http://mcdecoderdude.github.io/serilog-sinks-archivingfile/",
+        "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+        "iconUrl": "http://serilog.net/images/serilog-sinks-nuget.png"
+    },
 
-  "dependencies": {
-    "NETStandard.Library": "1.6.0"
-  },
+    "dependencies": {
+        "NETStandard.Library": "1.6.0",
+        "Serilog": "2.0.0",
+        "Serilog.Sinks.File": "2.1.0"
+    },
 
-  "frameworks": {
-    "netstandard1.6": {
-      "imports": "dnxcore50"
+    "buildOptions": {
+        "keyFile": "../../assets/Serilog.snk",
+        "warningsAsErrors": true,
+        "xmlDoc": true
+    },
+
+    "frameworks": {
+        "net4.5": {},
+        "netstandard1.6": {
+            "imports": "dnxcore50",
+            "dependencies": {
+                "System.IO": "4.1.0",
+                "System.IO.FileSystem.Primitives": "4.0.1",
+                "System.Runtime.InteropServices": "4.1.0"   
+            }
+        }
     }
-  }
 }
