@@ -1,5 +1,7 @@
 # Serilog.Sinks.ArchivingFile [![Build status](https://ci.appveyor.com/api/projects/status/75r99ewehvpm2a3r?svg=true)](https://ci.appveyor.com/project/McDeCoderDude/serilog-sinks-archivingfile)
 
+[![Join the chat at https://gitter.im/McDeCoderDude/serilog-sinks-archivingfile](https://badges.gitter.im/McDeCoderDude/serilog-sinks-archivingfile.svg)](https://gitter.im/McDeCoderDude/serilog-sinks-archivingfile?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Writes [Serilog](https://serilog.net) events to a text file, one daily with option to archieve and compress to seperate location. This sink was based on [Serilog.Sinks.RollingFile](https://github.com/serilog/serilog-sinks-rollingfile)
 
 ### Getting started
